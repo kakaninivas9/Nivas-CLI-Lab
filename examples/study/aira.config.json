@@ -1,0 +1,11 @@
+{
+  "name": "study-helper",
+  "displayName": "Study Helper",
+  "description": "Practice connecting a generated CLI to a local demonstration API",
+  "provider": "custom",
+  "api": "http://127.0.0.1:8787/chat",
+  "auth": { "type": "none" },
+  "commands": [{ "name": "explain", "description": "Request a demonstration response", "method": "POST", "requestTemplate": { "input": "{{input}}" }, "responsePath": "reply" }],
+  "theme": { "logo": "none" },
+  "outDir": "dist-cli/study-helper"
+}
